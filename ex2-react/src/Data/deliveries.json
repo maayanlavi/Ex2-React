@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1, 
+        "date":"01.01.2021", 
+        "name": "Maayan Lavi", 
+        "city": "Ramat Gan"
+    },
+    {
+        "id": 2, 
+        "date":"02.01.2021", 
+        "name": "Shir Lavi", 
+        "city": "Tal Aviv"
+    },
+    {
+        "id": 3, 
+        "date":"03.01.2021", 
+        "name": "Noy Lavi", 
+        "city": "Haifa"
+    }
+]
