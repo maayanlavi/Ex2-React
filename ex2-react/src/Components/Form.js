@@ -28,23 +28,35 @@ class Form extends Component {
     handleCity(e) {
         this.props.handleCity(e);
     }
+
+    labelStyle = {
+        width: '400px',
+        height:'60px',
+        marginTop:'14px',
+        borderRadius: '5px',
+        fontStyle: 'normal',
+        fontWeight: '700',
+        fontSize: '18px',
+        border: '2px solid #ED4D47'
+
+    }
      
     render() {
         return (
             <div className="form">
             <label>
-                <input type="text" name="date" value={this.props.date} onChange={this.handleDate}/>
+                <input style={this.labelStyle} type="text" name="date" value={this.props.date} onChange={this.handleDate}/>
             </label> 
             <br/>       
             <label>
-                <input type="text" name="name" value={this.props.name} onChange={this.handleName}/>
+                <input style={this.labelStyle} type="text" name="name" value={this.props.name} onChange={this.handleName}/>
             </label>  
             <br/>      
             <label>
-                <input type="text" name="city" value={this.props.city} onChange={this.handleCity}/>
+                <input style={this.labelStyle} type="text" name="city" value={this.props.city} onChange={this.handleCity}/>
             </label>
             <br/>
-            <button onClick={this.onSubmitForm}>{this.props.button}</button>
+            <button style={{backgroundColor:'rgba(238, 77, 71, 1)', color:'white', width:'158px', height:'60px', border: '1px solid #ED4D47', borderRadius:'5px', marginTop:'16px', marginLeft:'30%', fontWeight: '700', fontSize:'16px'}}onClick={this.onSubmitForm}>{this.props.button}</button>
         </div>
         )
     }

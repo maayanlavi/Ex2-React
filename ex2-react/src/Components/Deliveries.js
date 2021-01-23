@@ -79,7 +79,6 @@ class Deliveries extends Component {
             }))
     }
     else {
-        console.log(this.state.id);
         this.setState(prevState => ({
             deliveries: prevState.deliveries.map(
                 delivery => delivery.id !== this.state.id ? delivery : {...delivery,
@@ -99,7 +98,6 @@ class Deliveries extends Component {
         city:'city',
         button:'Save',
     })) 
-    console.log(this.state.city);
 }
 
     nextId(deliveries =[]) {
@@ -123,12 +121,37 @@ class Deliveries extends Component {
         }))
     }
 
+    deliveriesStyle = {
+        backgroundColor: "white",
+        position: "absolute",
+        width: "550px",
+        borderRadius: "13px",
+        // position: "absolute";
+        // width: "550px",
+        // height: "594px",
+        left: "183px",
+        top: "116px",
+        height: "594px",
+    }
+
+    formStyle = {
+        position:"absolute",
+        top:'116px',
+        right:'10%',
+        width:'400px',
+
+    }
+
     render() {
         return(
-            <div className="deliveries">
+            <>
+            <div className="deliveries" style={this.deliveriesStyle}>
                 {this.state.deliveries.map(this.eachDelivery)}
+            </div>
+            <div className="form" style={this.formStyle}>
                 <Form date={this.state.date} name={this.state.name} city={this.state.city} button={this.state.button} onSubmitForm= {this.add} handleDate={this.handleDate} handleCity={this.handleCity} handleName={this.handleName} />
             </div>
+            </>
         )
     }
 }
