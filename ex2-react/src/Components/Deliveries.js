@@ -3,9 +3,7 @@ import Delivery from './Delivery';
 import Form from './Form';
 import deliveriesData from '../Data/deliveries.json';
 
-
 class Deliveries extends Component {
-    
     constructor(props) {
         super(props);
 
@@ -44,7 +42,6 @@ class Deliveries extends Component {
                 }
             ]
         }))
-
     }
 
     eachDelivery(item, i) {
@@ -91,7 +88,6 @@ class Deliveries extends Component {
         }))
     }
 
-    
     this.setState(() => ({
         date:'date',
         name:'name',
@@ -122,21 +118,21 @@ class Deliveries extends Component {
     }
 
     deliveriesStyle = {
-        backgroundColor: "white",
-        position: "absolute",
-        width: "550px",
-        borderRadius: "13px",
-        // position: "absolute";
-        // width: "550px",
-        // height: "594px",
-        left: "183px",
-        top: "116px",
-        height: "594px",
+        backgroundColor: 'white',
+        position: 'absolute',
+        width: '550px',
+        borderRadius: '13px',
+        left: '183px',
+        top: '116px',
+        height: '557px',
+        maxHeight: '557px',
+        overflow:'scroll',
+        
     }
 
     formStyle = {
         position:"absolute",
-        top:'116px',
+        top:'102px',
         right:'10%',
         width:'400px',
 

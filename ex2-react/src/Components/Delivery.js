@@ -26,7 +26,7 @@ class Delivery extends Component {
 
     deliveryStyle = {
         marginLeft:'24px',
-        marginTop:'22px'
+        marginTop:'22px',
     }
 
     button1Style = {
@@ -38,7 +38,7 @@ class Delivery extends Component {
         width:'36px',
         height:'36px',
         position:'absolute',
-        right:'40px'
+        right:'50px'
 
     }
 

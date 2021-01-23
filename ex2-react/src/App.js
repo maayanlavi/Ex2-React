@@ -6,15 +6,6 @@ import Deliveries from './Components/Deliveries';
 
 class App extends Component {
 
-  appStyle ={
-    backgroundImage:`url(${view})`,
-    backgroundPosition: 'top',
-    backgroundSize: '90% 80%',
-    backgroundRepeat: 'no-repeat',
-    width: '100%',
-    height: '100%',
-
-  }
 
   carStyle = {
     width: '50%',
@@ -23,7 +14,6 @@ class App extends Component {
     left: "0%",
     right: "49.44%",
     top: "79.38%",
-    bottom: "0%"
   
   }
 
@@ -32,6 +22,7 @@ class App extends Component {
     background: '#FFFFFF',
     backgroundImage:`url(${view})`,
     backgroundRepeat: 'no-repeat',
+    backgroundSize: '100%',
     marginTop:'0%',
     width: '100%',
     height: '800px',
