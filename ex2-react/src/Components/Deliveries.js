@@ -45,7 +45,7 @@ class Deliveries extends Component {
     }
 
     eachDelivery(item, i) {
-        return <Delivery key={i} index={item.id} onDelete={this.delete} onUpdate={this.update}>{i+1} {item.date} {item.name} {item.city} </Delivery>
+        return <Delivery key={i} index={item.id} onDelete={this.delete} onUpdate={this.update}>{i+1}&nbsp;&nbsp;&nbsp;  {item.date}&nbsp;&nbsp; {item.name}&nbsp;&nbsp; {item.city} </Delivery>
     }
 
     handleDate(e) {

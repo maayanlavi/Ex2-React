@@ -51,8 +51,7 @@ class Delivery extends Component {
         width:'36px',
         height:'36px',
         position:'absolute',
-        right:'1px'
-
+        right:'1px',
     }
 
     render() {
